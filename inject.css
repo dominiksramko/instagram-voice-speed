@@ -1,0 +1,20 @@
+.playback-rate-controller {
+  display: inline-block;
+  all: unset;
+  border: 1px solid rgb(var(--ig-highlight-background));
+  border-radius: 16px;
+  padding: calc(var(--base-unit) * 2);
+  margin: 8px;
+  width: 40px;
+  text-align: center;
+}
+
+.playback-rate-controller:hover,
+.playback-rate-controller:focus {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.playback-rate-controller:focus-visible {
+  outline: -webkit-focus-ring-color auto 1px;
+}

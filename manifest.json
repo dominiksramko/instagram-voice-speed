@@ -1,0 +1,24 @@
+{
+  "name": "Instagram Voice Speed",
+  "description": "Adds a little button right next to a voice message when it's playing that lets you adjust the speed.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "run_at" : "document_idle",
+      "js": ["inject.js"],
+      "css": ["inject.css"],
+      "matches": [
+        "https://instagram.com/*",
+        "https://www.instagram.com/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
